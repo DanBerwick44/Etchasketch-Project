@@ -1,21 +1,21 @@
 *{
     background-color: rgb(231, 231, 190);
 }
-.container{
+#container{
+    display: flex;
     width: 960px;
     height: 960px;
-    display:flex;
-    flex-wrap: column;
     background-color: gray;
+    flex-grow: 1;
 }
 
 
 .row{
-    width: 100px;
-    height: 100px;
+    height: auto;
+    width: auto;
     background-color: white;
-    display: block;
-    flex:1;
+    display: flex;
+    flex-grow: 3;
 }
 .row:hover {
     background-color: black;
