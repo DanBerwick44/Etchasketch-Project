@@ -4,11 +4,12 @@ function buildEtchasketch(){
     function chooseSize(){
         var size = parseInt(prompt("Choose a size"))
         console.log("size recognized as " + typeof size)
-        if ((size > 100) || (size < 0) || (typeof size != "number")){
+        if ((size >= 100) || (size < 0) || (typeof size != "number")){
             var size = chooseSize()
         }
         return size
     }
+
     let size = chooseSize()
     console.log("Button Press Detected")
     console.log("Button passed size " + size + " grid")
