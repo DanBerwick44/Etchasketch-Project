@@ -3,19 +3,23 @@
 }
 #container{
     display: flex;
-    width: 960px;
-    height: 960px;
+    max-width: 960px;
+    max-height: 960px;
     background-color: gray;
-    flex-grow: 1;
 }
 
+.column{
+    display:flex;
+    flex-direction: column;
+    height: 960px;
+    flex: 1;
+    
+}
 
 .row{
-    height: auto;
-    width: auto;
     background-color: white;
     display: flex;
-    flex-grow: 3;
+    flex-grow: 1;
 }
 .row:hover {
     background-color: black;
